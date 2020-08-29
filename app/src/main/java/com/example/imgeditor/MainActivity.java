@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
                     if (grantResults.length > 0 && grantResults[i] == PackageManager.PERMISSION_GRANTED) {
                         fn_imagespath();
                     } else {
-                        Toast.makeText(MainActivity.this, "The app was not allowed to read or write to your storage. Hence, it cannot function properly. Please consider granting it this permission", Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, "The app was not granted permissions", Toast.LENGTH_LONG).show();
                     }
                 }
             }
